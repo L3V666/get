@@ -15,5 +15,4 @@ def plot_sampling_period_hist(time):
     plt.figure(figsize=(10, 6))
     plt.hist(sampling_period)
     plt.grid()
-    plt.xlim(0, 0.06)
     plt.show()
