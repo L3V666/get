@@ -2,7 +2,7 @@ import mcp3021_driver
 import time
 import adc_plot
 
-mcp3021 = mcp3021_driver.MCP3021(5.2)
+mcp3021 = mcp3021_driver.MCP3021(5.2, 1)
 voltage_values = []
 time_values = []
 duration = 3.0
