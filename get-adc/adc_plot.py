@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 def plot_voltage_vs_time(time, voltage, max_voltage):
     plt.figure(figsize=(10, 6))
     plt.plot(time, voltage)
+    plt.grid()
     plt.show()
 
 def plot_sampling_period_hist(time):
@@ -13,4 +14,6 @@ def plot_sampling_period_hist(time):
     print(sampling_period)
     plt.figure(figsize=(10, 6))
     plt.hist(sampling_period)
+    plt.grid()
+    plt.xlim(0, 0.06)
     plt.show()
